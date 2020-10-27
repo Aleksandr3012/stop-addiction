@@ -306,7 +306,7 @@ function eventHandler() {
 		// noSwipingClass: 'swiper-no-swiping',
 		breakpoints: {
 			992: {
-				slidesPerView: 3,
+				// slidesPerView: 3,
 				freeMode: false
 			}
 		}

@@ -3,8 +3,12 @@
 	border-bottom: solid 1px #f2eddc;
 
 	&__item {
+		display: block;
 		box-shadow: 0 19px 52px $em-base rgba(246, 239, 231, 0.75);
-		padding: rem(28) rem(25) rem(40);
+		padding: rem(20);
+		@include media-breakpoint-up(sm) {
+			padding: rem(28) rem(25) rem(40);
+		}
 		@include media-breakpoint-up(xl) {
 			padding: rem(28) rem(32) rem(44);
 		}
@@ -12,12 +16,23 @@
 		margin-bottom: rem(30);
 		border-radius: rem(20);
 
+		&:hover {
+			box-shadow: 0 5px 10px 10px rgba(246, 239, 231, 1);
+			img {
+				transform: scale(0.9);
+			}
+		}
+
 		.row {
 			@include media-breakpoint-down(xl) {
 				justify-content: center;
 				text-align: center;
 			}
 		}
+	}
+
+	img {
+		@include mt;
 	}
 	
 	
@@ -28,12 +43,9 @@
 		}
 	}
 
-	.h5 {
-		font-weight: 400;
-		margin-bottom: 0;
-	}
 
 	&__text {
+		color: $body-color;
 		padding-top: rem(10);
 		@include media-breakpoint-up(xl) {
 			font-size: $h5-font-size;

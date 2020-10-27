@@ -1,6 +1,8 @@
 .navMenu{
-	display: flex;
-	justify-content: space-between;
+	@include media-breakpoint-up(lg) {
+		display: flex;
+		justify-content: space-between;
+	}
 	list-style: none;
 	@include roww(20px);
 	position: relative;

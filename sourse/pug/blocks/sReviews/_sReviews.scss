@@ -26,7 +26,10 @@
 		background-color: #fff;
 		border-radius: $border-radius-sm;
 		box-shadow: 0 22px 49px rgba(226, 212, 200, 0.75);
-		width: 386px;
+		width: 95%;
+		@include media-breakpoint-up(sm) {
+			width: 386px;
+		}
 		@include media-breakpoint-up(xl) {
 			width: 35%;
 		}
@@ -38,9 +41,9 @@
 			}
 		}
 		@include media-breakpoint-down(lg) {
-			padding: rem(25) rem(50) rem(24) rem(28);
+			padding: rem(15) rem(40) rem(15) rem(15);
 			&:last-child {
-				padding-right: rem(28);
+				padding-right: rem(15);
 			}
 		}
 	}
