@@ -1,0 +1,43 @@
+// start .sWeGive
+.sWeGive {
+	background-color: rgba($color:  #f4eee7, $alpha: 0.68);
+	padding-bottom: calc(var(--sPB) / 1.14);
+
+	.row {
+		@include media-breakpoint-up(xl) {
+			@include roww(79px);
+		}
+	}
+
+	.section-title {
+		padding-bottom: calc(var(--sPB) / 1.2);
+	}
+
+	&__item {
+		border-radius: 1.25rem;
+		background-color: rgba($color: #fcfbfb, $alpha: 0.68);
+		box-shadow: 0 22px 49px rgba(226, 212, 200, 0.75);
+		padding: rem(17) rem(20) rem(45);
+		height: calc(100% - #{rem(20)});
+		margin-bottom: rem(20);
+	}
+	
+	picture {
+		margin-bottom: rem(16);
+		display: block;
+	}
+
+	&__title {
+		font-weight: bold;
+		margin-bottom: rem(25);
+	}
+
+	p {
+		color: $light;
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sWeGive

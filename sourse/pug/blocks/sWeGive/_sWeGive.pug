@@ -1,0 +1,30 @@
+mixin sWeGive(data)
+	// start sWeGive
+	+b.SECTION.sWeGive.section#sWeGive&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Что мы даем 
+				
+			.row.justify-content-center
+				mixin item(data)
+					.col-sm-6.col-lg-4
+						+e.item.text-center
+							+pic(data.img,'','')
+							+e.title= data.title
+							p!= data.text
+				+item({
+					img: 'weGive-1',
+					title: 'Результат',
+					text: `Индивидуальный подбор лечения для&nbsp;зависимого гарантирует положительный результат.`
+				})
+				+item({
+					img: 'weGive-2',
+					title: 'Лечение от лучших клиник и центров',
+					text: `Предлагаем только проверенные центры, с надежными методами лечения.`
+				})
+				+item({
+					img: 'weGive-3',
+					title: 'Освобождение от зависимости',
+					text: `Свободу от зависимости, свободу выбора, свободу самому строить свою&nbsp;жизнь.`
+				})
+	// end sWeGive

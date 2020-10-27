@@ -16,6 +16,11 @@ mixin arrow()
 		+icon('chevron-right')
 //- /arrow for swiper-slider
 
+mixin call()
+	+b.callBock.text-center&attributes(attributes)
+		+e.call Или звоните
+		+e.tel(href="tel:88003334108") #[span.text-primary 8 800] 333 41 08
+
 mixin ie11()
 	//- modernizer and for ie11
 	 

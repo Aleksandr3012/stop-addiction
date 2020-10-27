@@ -1,0 +1,28 @@
+// start .sHelp
+.sHelp {
+	position: relative;
+	min-height: rem(557);
+
+	.section-title {
+		padding-bottom: calc(var(--sTPB) * 1.15);
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+
+	&__btn {
+		margin-top: rem(13);
+		@extend .btn;
+		@extend .btn-primary;
+		@extend .btn-primary-sm;
+	}
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sHelp

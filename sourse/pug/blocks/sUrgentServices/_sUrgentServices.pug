@@ -1,0 +1,21 @@
+mixin sUrgentServices(data)
+	// start sUrgentServices
+	+b.SECTION.sUrgentServices.section#sUrgentServices&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Нет времени ждать? Срочные услуги:
+				
+			+e.row.row.justify-content-center
+				mixin item(i,t)
+					.col-sm-6.col-lg-4
+						+e.item
+							.row.align-items-center
+								.col-md-auto
+									+pic(`services-${i}.png`,'','')
+								.col
+									+e.text!= t
+				+item(1,'Детоксикация')
+				+item(2,'Выезд специалиста на дом')
+				+item(3,'Кодирование')
+			+call()
+	// end sUrgentServices

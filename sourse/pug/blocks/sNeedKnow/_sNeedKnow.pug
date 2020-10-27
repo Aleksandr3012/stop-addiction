@@ -1,0 +1,39 @@
+mixin sNeedKnow(data)
+	// start sNeedKnow
+	+b.SECTION.sNeedKnow.section#sNeedKnow&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Все, что надо знать про СтопЗависимость
+				
+			+e.firstRow.row
+				+e.picCol.col
+					+e.imgWrap
+						+pic('needKnow-1','','')
+				+e.textCol.col
+					p Центр основан в&nbsp;2010 году в&nbsp;Казани. За&nbsp;10&nbsp;лет работы компания смогла не&nbsp;только заработать надежную репутацию в&nbsp;Татарстане, но&nbsp;и&nbsp;выйти далеко за&nbsp;пределы Республики.
+					p Сейчас мы&nbsp;работаем по&nbsp;всей территории&nbsp;РФ и&nbsp;даже за&nbsp;ее&nbsp;пределами&nbsp;&mdash; в&nbsp;Израиле.
+					+e.roundImg
+						+pic('needKnow-2','','')
+			+e.features
+				.row
+					+e.col.col-lg-auto
+						p.text-primary #[strong.d-block Основной принцип в работе центра:] Индивидуально подойти к&nbsp;каждому случаю и&nbsp;подобрать оптимальную программу лечения в&nbsp;лучших клиниках и&nbsp;центрах.
+						strong Особенности центра:
+						ul
+							li Индивидуальный подход к каждому случаю
+							li Широкий выбор клиник, центров и программ лечения
+							li Помощь при всех видах зависимостей, а не только алкогольной&nbsp;и наркотической
+					.col
+						strong СтопЗависимость это:
+						br
+						br
+						strong.text-primary 10 лет
+						p Помощи зависимым
+						strong.text-primary 1287 человек
+						p освободили от зависимостей 
+						strong.text-primary 65
+						p Клиник-партнеров
+
+					
+					
+	// end sNeedKnow

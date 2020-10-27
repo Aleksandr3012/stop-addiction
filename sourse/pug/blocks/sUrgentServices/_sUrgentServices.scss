@@ -1,0 +1,51 @@
+// start .sUrgentServices
+.sUrgentServices {
+	border-bottom: solid 1px #f2eddc;
+
+	&__item {
+		box-shadow: 0 19px 52px $em-base rgba(246, 239, 231, 0.75);
+		padding: rem(28) rem(25) rem(40);
+		@include media-breakpoint-up(xl) {
+			padding: rem(28) rem(32) rem(44);
+		}
+		height: calc(100% - #{rem(30)});
+		margin-bottom: rem(30);
+		border-radius: rem(20);
+
+		.row {
+			@include media-breakpoint-down(xl) {
+				justify-content: center;
+				text-align: center;
+			}
+		}
+	}
+	
+	
+	&__row {
+		padding-bottom: rem(15);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(34);
+		}
+	}
+
+	.h5 {
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+
+	&__text {
+		padding-top: rem(10);
+		@include media-breakpoint-up(xl) {
+			font-size: $h5-font-size;
+		}
+	}
+
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sUrgentServices

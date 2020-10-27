@@ -1,0 +1,32 @@
+mixin sWhoApplying(data)
+	// start sWhoApplying
+	+b.SECTION.sWhoApplying.section#sWhoApplying&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Кто обращается к нам за помощью
+				
+			+e.row.row
+				+e.item.col-lg-6
+					.row.align-items-center
+						.col-auto
+							+e.imgWrap
+								+pic('whoApplying-1.jpg','','')
+						.col
+							.h5 Люди, страдающие зависимостью
+					+e.textWrap
+						p Осознание проблемы и&nbsp;обращение за&nbsp;помощью&nbsp;&mdash; важный шаг в&nbsp;борьбе с&nbsp;зависимостью. И&nbsp;желание излечиться, избавиться от&nbsp;уничтожающего личность недуга можно только приветствовать
+				+e.item.col-lg-6
+					.row.align-items-center
+						.col-auto
+							+e.imgWrap
+								+pic('whoApplying-2.jpg','','')
+						.col
+							.h5 Родные и близкие зависимых
+					+e.textWrap
+						p Что может быть важнее, чем вытащить близкого человека из&nbsp;ямы зависимости?<br> В&nbsp;этом случае мы&nbsp;не&nbsp;только подбираем лечения для самого зависимого человека, но&nbsp;и&nbsp;оказываем поддержку его семье, близким людям.
+			+form-wrap
+				+pic('icon-help','','')(class="d-none d-md-block")
+				+input('','tel')
+				+e.btn(type="submit") Обратиться за помощью
+
+	// end sWhoApplying

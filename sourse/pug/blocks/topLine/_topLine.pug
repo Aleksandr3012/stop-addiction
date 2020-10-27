@@ -1,9 +1,25 @@
-mixin topLine()
+mixin topLine(work,mail)
 	// start topLine
-	+b.SECTION.topLine.section#topLine&attributes(attributes)
+	+b.topLine&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+			.row.justify-content-between
+				.col-sm-auto
+					+e.logo(href="/")
+						img.res-i(src="img/@2x/logo.png", alt="")
+						+e.logoTextWrap
+							+e.logoTitle #[span.text-primary Стоп]Зависимость
+							+e.result Нам важен результат.
+				.col.d-none.d-lg-block
+					+e.work
+						+e.allRus!= work
+						+e.time Время работы:
+							.text-primary Круглосуточно
+				.col.col-lg-auto.d-none.d-md-block
+					+e.phone(href="tel:88003334108") #[span.text-primary 8 800] 333 41 08
+					+e.call Звонок бесплатный по РФ!
+					if mail
+						+e.mail(href="mailto:") E-mail:<br>stopzavisimost@mail.ru
+				+e.col.col-sm-auto
+					+e.tel(href="tel:89510614164") 8 (951) 061-41-64
+					+e.btn.link-modal(href="#modal-call") Обратный звонок
 	// end topLine

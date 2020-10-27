@@ -3,7 +3,22 @@ mixin sForm()
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sForm
+				h2 Специальное предложение
 				
-			.row
+			+e.form
+				.row
+					+e.picCol.col-lg
+						+pic('detox','bg')(class="picture-bg")
+						+e.sale -30%
+					+e.formCol.col
+						+e.date до 30.09.2020
+						.h2 Экспресс-детоксикация на&nbsp;дому <br>со скидкой 30%
+						p Заказать экспресс-детоксикацию:
+						+form-wrap
+							+input('','tel')
+							+e.btn.btn.btn-success(type="submit") Заказать детоксикацию
+			+b.section-title--sm.text-center
+				h2 Пора действовать!
+				+e.btn.btn.btn-primary(href="#") Обратиться за помощью
+			+call
 	// end sForm

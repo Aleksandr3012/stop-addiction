@@ -1,43 +1,51 @@
 .footer {
-		
+	background-color: $body-color;
+	padding-top: rem(25);
+	padding-bottom: rem(30);
+	color: #d6ccbc;
 	margin-top: auto;
 
-// 
-@include media-breakpoint-up(xl) {}
+	&__polite {
+		color: #d6ccbc;
+		text-decoration: underline;
+		display: block;
+		margin-bottom: rem(10);
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
-@include media-breakpoint-up(lg) {}
+	&__foot {
+		padding-top: rem(80);
+	}
 
-@include media-breakpoint-up(md) {}
+	&__sm {
+		font-size: 10px;
+	}
 
-@include media-breakpoint-up(sm) {}
+	.topLine {
+		border-bottom: none;
+
+		&__logoTitle,
+		&__result,
+		&__call,
+		&__mail,
+		&__tel,
+		&__phone {
+			color: #d6ccbc;
+		}
+
+		&__mail {
+			margin-top: rem(10);
+			display: block;
+		}
+
+	}
+
+
 
 @include media-breakpoint-up(xs) {}
-
-
-// 
 @include media-breakpoint-between(md, xl) {}
-
-
-// 
-@include media-breakpoint-only(xs) {}
-
-@include media-breakpoint-only(sm) {}
-
-@include media-breakpoint-only(md) {}
-
-@include media-breakpoint-only(lg) {}
-
 @include media-breakpoint-only(xl) {}
-
-
-// 
-@include media-breakpoint-down(xl) {}
-
-@include media-breakpoint-down(lg) {}
-
-@include media-breakpoint-down(md) {}
-
-@include media-breakpoint-down(sm) {}
-
 @include media-breakpoint-down(xs) {}
 }

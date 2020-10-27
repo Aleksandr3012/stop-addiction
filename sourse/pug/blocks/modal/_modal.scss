@@ -1,10 +1,11 @@
 .modal-win {
 	// display: block;
 	width: 100%;
+	max-width: 500px;
 	position: relative;
 
 	.modal-content {
-		// max-width: 485px;
+		max-width: 485px;
 		// padding-right: 40px 15px;
 	}
 
@@ -12,6 +13,17 @@
 		color: $primary;
 		font-size: 40px;
 		font-weight: 100;
+	}
+
+	.form-wrap {
+		form {
+			display: grid;
+			place-items: center;
+		}
+	}
+
+	.form-group {
+		margin-bottom: rem(10);
 	}
 }
 

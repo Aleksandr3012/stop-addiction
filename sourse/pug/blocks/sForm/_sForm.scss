@@ -1,29 +1,119 @@
 
-	// start .sForm
-	.sForm {
-		 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
+// start .sForm
+.sForm {
+	padding-top: calc(var(--sPT) / 1.2);
+	padding-bottom: calc(var(--sPB) / 1.2);
+	border-bottom: solid 1px #f2eddc;
+
+	.section-title {
+		padding-bottom: calc(var(--sTPB) * 1.08);
+
+		&--sm {
+			h2 {
+				margin-bottom: 1.55rem;
+			}
+			padding-bottom: calc(var(--sTPB) / 1.6);
+		}
+	}
+
+	&__form {
+		background-color: $primary;
+		border-radius: $border-radius-sm;
+		overflow: hidden;
+		color: #fff;
+		margin-bottom: rem(45);
+	}
+
+	.row {
+		@include media-breakpoint-up(xl) {
+			@include roww(60px);
+		}
+	}
+
+	&__formCol {
+		padding-top: rem(19);
+		padding-right: rem(53);
+		padding-bottom: rem(34);
+
+		.h2 {
+			line-height: 1;
+			position: relative;
+			margin-bottom: rem(35);
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: rem(-18);
+				@include size(39px 4px);
+				background-color: #fff;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 1.4rem;
+	}
+
+	&__picCol {
+		@include media-breakpoint-up(xl) {
+			max-width: 47.5%;
+		}
+		position: relative;
+		padding-left: 0;
+
+		.picture-bg {
+			z-index: 1;
+		}
+	}
+
+	&__sale{
+		position: absolute;
+		z-index: 2;
+		left: 9%;
+		top: 8%;
+		text-shadow: 0 1px 13px rgba(0, 0, 0, 0.75);
+		font-size: rem(64px);
+		font-weight: bold;
+	}
+
+	&__date {
+		color: #832f0a;
+		background-color: $success;
+		display: inline-block;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: rem(15);
+	}
+
+	.form-wrap {
+		form {
+			display: flex;
+			align-items: center;
+		}
+
+		&__input-wrap {
+			width: 100%;
+			max-width: rem(272px);
+			margin-right: rem(13);
+		}
+
+		// &__btn {
+		// 	padding-left: rem(15);
+		// 	padding-right: rem(15);
+		// }
+	}
+
+	&__btn {
+		margin-bottom: rem(30);
+	}
+
+
+
+
+
+
 	@include media-breakpoint-up(xs) {}
-	
-	//
 	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
 	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sForm

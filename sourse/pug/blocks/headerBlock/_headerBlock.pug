@@ -1,10 +1,15 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.SECTION.headerBlock.section#headerBlock&attributes(attributes)
+		+pic('headerBg-1','bg','')(class="picture-bg")
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
+			+b.section-title
+				h1 СтопЗависимость
+				h3 Центр по подбору лечения зависимостей
+			ul
+				li Индивидуальный подход к лечению!
+			+e.btn.link-modal(href="#modal-call") Быстрая консультация по зависимостям
 
-			.row
+
 						
 	// end headerBlock

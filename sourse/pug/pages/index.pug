@@ -3,21 +3,34 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
+include ../blocks/sUrgentServices/_sUrgentServices.pug
+include ../blocks/sWhoApplying/_sWhoApplying.pug
+include ../blocks/sHelp/_sHelp.pug
+include ../blocks/sWeGive/_sWeGive.pug
+include ../blocks/sNeedKnow/_sNeedKnow.pug
+include ../blocks/sReviews/_sReviews.pug
+include ../blocks/sMap/_sMap.pug
 
 block variables
 	- let  mainPage= null
 block title
-	- let  title= 'title'
+	- let  title= 'СтопЗависимость'
 	title= title
 block pagecontent
 
 	+mob-mnu()
 	+header()
-		+topLine() 
+		+topLine('Работаем по всей России')
 		+top-nav()
 	+headerBlock()
+	+sUrgentServices()
+	+sWhoApplying()
+	+sHelp()
+	+sWeGive()
+	+sNeedKnow()
 	+sForm()
-	+sContact()
+	+sReviews()
+	+sMap
 	+footer()
 
 

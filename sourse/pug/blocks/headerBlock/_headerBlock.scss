@@ -1,18 +1,41 @@
 // start .headerBlock
 .headerBlock {
-	margin-bottom: 1px;
-	min-height: 100vh;
-	min-height: calc(var(--vh, 1vh) * 100);
-	// background-image: url(../img);
-	// background-color: #000000;
+	--sPT: #{rem(110)};
+	--sPB: #{rem(110)};
+	--sTPB: #{rem(15)};
 
-	h1 {
-		margin-bottom: 1px;
+	position: relative;
+	// overflow: hidden;
+	min-height: rem(605);
+
+	&__btn {
+		@extend .btn;
+		@extend .btn-primary;
 	}
 
-	h2 {
-		margin-bottom: 1px;
+	ul {
+		margin-bottom: rem(30);
 	}
+
+	li {
+		list-style: none;
+		position: relative;
+		font-size: $h5-font-size;
+		color: $light;
+		padding-left: rem(47);
+		padding-bottom: rem(10);
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: rem(12);
+			@include size(30px 3px);
+			background-color: $primary;
+		}
+	}
+
+
 
 	@include media-breakpoint-up(xl) {}
 

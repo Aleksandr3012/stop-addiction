@@ -1,0 +1,115 @@
+
+// start .sNeedKnow
+.sNeedKnow {
+	padding-bottom: calc(var(--sPB) / 3);
+
+	.section-title {
+		padding-bottom: calc(var(--sTPB) / 1.7);
+	}
+
+	&__picCol {
+		max-width: 26.5%;
+	}
+
+	&__imgWrap {
+		border: solid 6px #ece3dc;
+		overflow: hidden;
+		border-radius: rem(35);
+		img {
+			width: 100%;
+		}
+	}
+
+	&__firstRow {
+		@include media-breakpoint-up(xl) {
+			@include roww(45px);
+		}
+	}
+
+	&__textCol {
+		position: relative;
+		padding-top: rem(28);
+
+	}
+
+	p {
+		margin-bottom: 1.4rem;
+	}
+	
+	&__roundImg {
+		position: absolute;
+		right: 5%;
+		bottom: rem(0);
+		z-index: 5;
+		@include size(184px);
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__features {
+		.row {
+			@include media-breakpoint-up(xl) {
+				@include roww(160px);
+			}
+		}
+		margin-top: rem(-65);
+		padding: rem(50) rem(70) rem(35);
+		box-shadow: 0 19px 52px $em-base rgba(246, 239, 231, 0.75);
+		background-color: #fff;
+		position: relative;
+		border-radius: rem(20);
+		overflow: hidden;
+	}
+
+
+	&__col {
+		position: relative;
+		@include media-breakpoint-up(lg) {
+			width: 57% !important;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			@include media-breakpoint-up(xl) {
+				right: -2.7%;
+			}
+			@include a-cent(y);
+			width: 1px;
+			height: 91%;
+			background-color: $primary;
+		}
+
+		p {
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	ul {
+		li {
+			list-style: none;
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 3px;
+				height: 3px;
+				background-color: $body-color;
+				border-radius: 50%;
+				margin-bottom: 3px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sNeedKnow

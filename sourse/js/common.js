@@ -244,7 +244,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = 'main.jpg';
+	screenName = 'main.png';
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
@@ -291,16 +291,26 @@ function eventHandler() {
 		},
 	}
 
-	const swiper4 = new Swiper('.sBanners__slider--js', {
+	const swiper4 = new Swiper('.sReviews__slider-js', {
 		// slidesPerView: 5,
-		...defaultSl,
+		// ...defaultSl,
 		slidesPerView: 'auto',
+		spaceBetween: -30,
 		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
+		// loopFillGroupWithBlank: true,
+		// touchRatio: 0.2,
+		// slideToClickedSlide: true,
+		// freeModeMomentum: true,
+		// noSwiping: true,
+		// noSwipingClass: 'swiper-no-swiping',
 
+		breakpoints: {
+			992: {
+				slidesPerView: 3,
+				freeMode: false
+
+			}
+		}
 	});
 	// modal window
 
