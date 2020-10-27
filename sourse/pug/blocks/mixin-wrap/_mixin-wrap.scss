@@ -37,7 +37,10 @@
 .callBock {
 	&__tel {
 		color: $body-color;
-		font-size: $h1-font-size;
+		font-size: $h3-font-size;
+		@include media-breakpoint-up(sm) {
+			font-size: $h1-font-size;
+		}
 		line-height: 1.15;
 	}
 }
