@@ -10,6 +10,7 @@ include ../blocks/sWeGive/_sWeGive.pug
 include ../blocks/sNeedKnow/_sNeedKnow.pug
 include ../blocks/sReviews/_sReviews.pug
 include ../blocks/sMap/_sMap.pug
+include ../blocks/sVideo/_sVideo.pug
 
 block variables
 	- let  mainPage= null
@@ -22,6 +23,7 @@ block pagecontent
 		+topLine('Работаем по всей России')
 		+top-nav()
 	+headerBlock()
+	+sVideo()
 	+sUrgentServices()
 	+sWhoApplying()
 	+sHelp()
