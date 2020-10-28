@@ -35,6 +35,22 @@
 		}
 	}
 
+	&__smTxt {
+		max-width: rem(825);
+	}
+
+	.section-title--bottobLine {
+		padding-bottom: calc(var(--sTPB) * 1.9);
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: rem(25);
+			left: 0;
+			background-color: $primary;
+			@include size(37px 4px);
+		}
+	}
 
 
 	@include media-breakpoint-up(xl) {}

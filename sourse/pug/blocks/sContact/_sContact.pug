@@ -1,9 +1,17 @@
 mixin sContact()
 	// start sContact
-	+b.SECTION.sContact.section#sContact&attributes(attributes)
+	+b.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
 			.row
+				.col-md-4
+					p Адрес:<br>Россия, Республика Татарстан<br>г. Казань, ул. Декабристов 85
+					+e.phone(href="tel:+79510614164") #[span.text-primary +7 951] 061 41 64
+					+e.phone(href="tel:+88003334108") #[span.text-primary 8 800] 333 41 08
+				.col-md-4
+					+e.mail E-mail:
+						a.d-block(href="mailto:stopzavisimost@mail.ru") stopzavisimost@mail.ru
+				.col-md-4
+					span Мы в социальных сетях:
+					+soc()
+
 	// end sContact

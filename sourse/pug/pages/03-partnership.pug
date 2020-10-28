@@ -1,0 +1,42 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sUrgentServices/_sUrgentServices.pug
+include ../blocks/sWhoApplying/_sWhoApplying.pug
+include ../blocks/sHelp/_sHelp.pug
+include ../blocks/sWeGive/_sWeGive.pug
+include ../blocks/sNeedKnow/_sNeedKnow.pug
+include ../blocks/sReviews/_sReviews.pug
+include ../blocks/sMap/_sMap.pug
+include ../blocks/sAbout/_sAbout.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'СтопЗависимость'
+	title= title
+block pagecontent
+
+	+header()
+		+topLine('Работаем по всей России')
+		+top-nav()
+	+headerBlock({
+		img: 'headerBg-3',
+		title: 'Партнерская программа',
+		text: `Наша программа для реабилитационных центров, деятельность которых направлена на&nbsp;результативное лечение зависимости у&nbsp;пациентов.<br> Для тех центров, где пациенты действительно проходят лечение, а&nbsp;не&nbsp;просто отбывают положенный срок.`
+	})
+	+sAbout-03()
+	//- +sUrgentServices()
+	//- +sWhoApplying()
+	//- +sHelp()
+	//- +sWeGive()
+	//- +sNeedKnow()
+	//- +sForm()
+	//- +sReviews()
+	+sMap
+	+footer()
+
+
+	

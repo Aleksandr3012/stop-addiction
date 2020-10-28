@@ -1,0 +1,42 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sUrgentServices/_sUrgentServices.pug
+include ../blocks/sWhoApplying/_sWhoApplying.pug
+include ../blocks/sHelp/_sHelp.pug
+include ../blocks/sWeGive/_sWeGive.pug
+include ../blocks/sNeedKnow/_sNeedKnow.pug
+include ../blocks/sReviews/_sReviews.pug
+include ../blocks/sMap/_sMap.pug
+include ../blocks/sAbout/_sAbout.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'СтопЗависимость'
+	title= title
+block pagecontent
+
+	+header()
+		+topLine('Работаем по всей России')
+		+top-nav()
+	+headerBlock({
+		img: 'headerBg-4',
+		title: 'Родственникам и близким',
+		text: `Мы&nbsp;приходим на&nbsp;помощь в&nbsp;самых нелегких ситуациях и&nbsp;точно знаем как можем помочь и&nbsp;пациенту&nbsp;и&nbsp;его близкому окружению.`
+	})
+	+sAbout-04()
+	//- +sUrgentServices()
+	//- +sWhoApplying()
+	//- +sHelp()
+	//- +sWeGive()
+	//- +sNeedKnow()
+	//- +sForm()
+	//- +sReviews()
+	+sMap
+	+footer()
+
+
+	

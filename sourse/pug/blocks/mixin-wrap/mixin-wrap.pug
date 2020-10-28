@@ -21,6 +21,15 @@ mixin call()
 		+e.call Или звоните
 		+e.tel(href="tel:88003334108") #[span.text-primary 8 800] 333 41 08
 
+mixin callForm(t='Обратиться за помощью')
+	+form-wrap(class="callForm")
+		+e.main
+			+pic('icon-help','','')(class="d-none d-md-block")
+			+input('','tel')
+			+e.btn(type="submit")= t
+		+call
+
+
 mixin ie11()
 	//- modernizer and for ie11
 	 

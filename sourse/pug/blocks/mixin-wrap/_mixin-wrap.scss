@@ -45,3 +45,48 @@
 	}
 }
 
+.callForm {
+	@include media-breakpoint-up(sm) {
+		padding-top: rem(30);
+	}
+	.form-wrap__main{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+		max-width: rem(630);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(15);
+	}
+
+	.form-group {
+		@include media-breakpoint-up(xl) {
+			width: 100%;
+			max-width: rem(272px);
+		}
+		@include media-breakpoint-up(sm) {
+			margin-left: rem(15);
+			margin-right: rem(15);
+		}
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(15);
+			width: 100%;
+		}
+	}
+
+	.form-wrap__btn {
+		@extend .btn;
+		@extend .btn-primary;
+		@include media-breakpoint-up(xl) {
+			padding-left: rem(37);
+			padding-right: rem(37);
+		}
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+	}
+}
+

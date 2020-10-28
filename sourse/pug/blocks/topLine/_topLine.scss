@@ -7,7 +7,9 @@
 		padding-top: rem(44);
 		padding-bottom: rem(19);
 	}
-	border-bottom: solid 1px #ede5ce;
+	@include media-breakpoint-up(lg) {
+		border-bottom: solid 1px #ede5ce;
+	}
 	&__logo {
 		@include media-breakpoint-up(sm) {
 			margin-top: rem(-15);
