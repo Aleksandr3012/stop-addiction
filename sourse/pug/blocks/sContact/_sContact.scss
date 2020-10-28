@@ -1,8 +1,33 @@
 // start .sContact
 .sContact {
-	
+	padding-top: calc(var(--sPT) * 1.1);
+	padding-bottom: calc(var(--sPB) * 2);
 
+	&__phone {
+		display: block;
+		color: $body-color;
+		font-size: $border-radius-sm;
+		margin-bottom: 3px;
+	}
 
+	&__mail {
+		@include media-breakpoint-down(md) {
+			padding-top: rem(20);
+		}
+		a {
+			color: $body-color;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+
+	&__soc {
+		@include media-breakpoint-down(md) {
+			padding-top: rem(20);
+		}
+		margin-bottom: rem(12);
+	}
 
 
 

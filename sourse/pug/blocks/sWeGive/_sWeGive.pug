@@ -8,7 +8,7 @@ mixin sWeGive(data)
 			.row.justify-content-center
 				mixin item(data)
 					.col-sm-6.col-lg-4
-						+e.item.text-center
+						+e.item.text-center&attributes(attributes)
 							+pic(data.img,'','')
 							+e.title= data.title
 							p!= data.text
@@ -28,3 +28,29 @@ mixin sWeGive(data)
 					text: `Свободу от зависимости, свободу выбора, свободу самому строить свою&nbsp;жизнь.`
 				})
 	// end sWeGive
+
+mixin sWeGive-05(data)
+	// start sWeGive
+	+b.SECTION.sWeGive--cotacts.section#sWeGive&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Одни из лучших в России
+				
+			.row.justify-content-center
+				mixin item(data)
+					.col-sm-6.col-lg-4
+						+e.item--contacts
+							block
+				+item()
+					p ООО "Результат" 
+					p Адрес: 630073 г.Новосибирск,<br>ул.Блюхера дом 71/1
+					p ЛО-54-01-005978
+
+				+item()
+					p ООО "Чистый город" 
+					p Адрес: 660021 г.Красноярск,<br> проспект Мира, 115а
+					p ЛО-24-01-000886
+				+item()
+					p ООО "ДА-компани"
+					p Адрес: 614030 г.Пермь ул.<br>Янаульская, дом 13
+					p ЛО-59-01-005247

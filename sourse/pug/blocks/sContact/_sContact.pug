@@ -3,15 +3,15 @@ mixin sContact()
 	+b.sContact.section#sContact&attributes(attributes)
 		.container
 			.row
-				.col-md-4
-					p Адрес:<br>Россия, Республика Татарстан<br>г. Казань, ул. Декабристов 85
+				.col-sm-6.col-md-5
+					p #[strong Адрес:]<br>Россия, Республика Татарстан<br>г. Казань, ул. Декабристов 85
 					+e.phone(href="tel:+79510614164") #[span.text-primary +7 951] 061 41 64
 					+e.phone(href="tel:+88003334108") #[span.text-primary 8 800] 333 41 08
-				.col-md-4
+				.col-sm-6.col-md-4
 					+e.mail E-mail:
 						a.d-block(href="mailto:stopzavisimost@mail.ru") stopzavisimost@mail.ru
-				.col-md-4
-					span Мы в социальных сетях:
+				.col-md-3
+					+e.soc Мы в социальных сетях:
 					+soc()
 
 	// end sContact

@@ -15,7 +15,7 @@ include ../blocks/sAbout/_sAbout.pug
 block variables
 	- let  mainPage= null
 block title
-	- let  title= 'СтопЗависимость'
+	- let  title= 'О нас'
 	title= title
 block pagecontent
 
@@ -23,11 +23,11 @@ block pagecontent
 		+topLine('Работаем по всей России')
 		+top-nav()
 	+headerBlock({
-		img: 'headerBg-2',
-		title: 'О нашей работе',
-		text: `Мы&nbsp;находим подход в&nbsp;любой, даже самой запущенной ситуации и&nbsp;предлагаем нашим&nbsp;клиентам&nbsp;только&nbsp;самое оптимальное решение.`
-	})
-	+sAbout()
+		img: 'headerBg-6',
+		title: title,
+		text: `Услуги, которые мы&nbsp;предоставляем, уникальны&nbsp;&mdash; мы&nbsp;отталкиваемся от&nbsp;проблем и&nbsp;желаний клиентов. В&nbsp;отличие от&nbsp;других центров, мы&nbsp;не&nbsp;ограничены одним методом и&nbsp;даже одной клиникой. В&nbsp;нашем портфеле десятки партнеров в&nbsp;регионах России и&nbsp;за&nbsp;рубежом.`
+	}).headerBlock_txtXsm
+	+sContent()
 	//- +sUrgentServices()
 	//- +sWhoApplying()
 	//- +sHelp()

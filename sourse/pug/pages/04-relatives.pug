@@ -15,7 +15,7 @@ include ../blocks/sAbout/_sAbout.pug
 block variables
 	- let  mainPage= null
 block title
-	- let  title= 'СтопЗависимость'
+	- let  title= 'Родственникам и близким'
 	title= title
 block pagecontent
 
@@ -24,7 +24,7 @@ block pagecontent
 		+top-nav()
 	+headerBlock({
 		img: 'headerBg-4',
-		title: 'Родственникам и близким',
+		title: title,
 		text: `Мы&nbsp;приходим на&nbsp;помощь в&nbsp;самых нелегких ситуациях и&nbsp;точно знаем как можем помочь и&nbsp;пациенту&nbsp;и&nbsp;его близкому окружению.`
 	})
 	+sAbout-04()

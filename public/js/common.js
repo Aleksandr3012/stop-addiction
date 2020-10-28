@@ -252,7 +252,7 @@ function eventHandler() {
 
 	var x = window.location.host;
 	var screenName;
-	screenName = '04.png';
+	screenName = '06.png';
 
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after("<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>"));
@@ -292,18 +292,14 @@ function eventHandler() {
 		// }
 
 	}), _defaultSl);
-	var swiper4 = new Swiper('.sReviews__slider-js', {
+	var swiper4 = new Swiper('.sReviews__slider--js', {
 		// slidesPerView: 5,
 		// ...defaultSl,
 		slidesPerView: 'auto',
 		spaceBetween: -30,
 		freeMode: true,
-		// loopFillGroupWithBlank: true,
-		// touchRatio: 0.2,
-		// slideToClickedSlide: true,
-		// freeModeMomentum: true,
-		// noSwiping: true,
-		// noSwipingClass: 'swiper-no-swiping',
+		freeModeMomentum: true,
+		watchOverflow: true,
 		breakpoints: {
 			992: {
 				// slidesPerView: 3,

@@ -2,7 +2,7 @@
 .topLine {
 	position: relative;
 	padding-top: rem(10);
-	padding-bottom: rem(10);
+	padding-bottom: rem(0);
 	@include media-breakpoint-up(sm) {
 		padding-top: rem(44);
 		padding-bottom: rem(19);

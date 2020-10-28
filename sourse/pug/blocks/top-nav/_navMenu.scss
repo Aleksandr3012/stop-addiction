@@ -2,9 +2,9 @@
 	@include media-breakpoint-up(lg) {
 		display: flex;
 		justify-content: space-between;
+		@include roww(20px);
 	}
 	list-style: none;
-	@include roww(20px);
 	position: relative;
 	margin-bottom: 0;
 	max-width: 100%;
@@ -25,15 +25,21 @@
 	&__item {
 		position: relative;
 
-		&:not(:last-child) {
-			&::after {
-				background-color: #ede5ce;
-				content: '';
-				position: absolute;
-				right: -10%;
-				@include a-cent(y);
-				width: 1px;
-				@include size(1px 17px);
+		@include media-breakpoint-up(lg) {
+
+			&:not(:last-child) {
+				&::after {
+					background-color: #ede5ce;
+					content: '';
+					position: absolute;
+					right: rem(-10);
+					@include media-breakpoint-up(xl) {
+						right: rem(-30);
+					}
+					@include a-cent(y);
+					width: 1px;
+					@include size(1px 17px);
+				}
 			}
 		}
 	}

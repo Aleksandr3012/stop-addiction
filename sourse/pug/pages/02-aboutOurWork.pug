@@ -15,7 +15,7 @@ include ../blocks/sAbout/_sAbout.pug
 block variables
 	- let  mainPage= null
 block title
-	- let  title= 'Партнерская программа'
+	- let  title= 'О нашей работе'
 	title= title
 block pagecontent
 
@@ -23,11 +23,11 @@ block pagecontent
 		+topLine('Работаем по всей России')
 		+top-nav()
 	+headerBlock({
-		img: 'headerBg-3',
+		img: 'headerBg-2',
 		title: title,
-		text: `Наша программа для реабилитационных центров, деятельность которых направлена на&nbsp;результативное лечение зависимости у&nbsp;пациентов.<br> Для тех центров, где пациенты действительно проходят лечение, а&nbsp;не&nbsp;просто отбывают положенный срок.`
+		text: `Мы&nbsp;находим подход в&nbsp;любой, даже самой запущенной ситуации и&nbsp;предлагаем нашим&nbsp;клиентам&nbsp;только&nbsp;самое оптимальное решение.`
 	})
-	+sAbout-03()
+	+sAbout()
 	//- +sUrgentServices()
 	//- +sWhoApplying()
 	//- +sHelp()
