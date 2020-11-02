@@ -48,9 +48,13 @@
 	&__roundImg {
 		@include media-breakpoint-up(lg) {
 			position: absolute;
-			right: 5%;
-			bottom: rem(0);
+			right: 0%;
+			bottom: rem(-100);
 			z-index: 5;
+		}
+		@include media-breakpoint-up(xl) {
+			bottom: rem(-30);
+			right: 5%;
 		}
 		@include media-breakpoint-up(md) {
 			@include size(184px);

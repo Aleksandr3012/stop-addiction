@@ -6,7 +6,10 @@
 
 	position: relative;
 	// overflow: hidden;
-	min-height: rem(605);
+	min-height: rem(405);
+	@include media-breakpoint-up(lg) {
+		min-height: rem(505);
+	}
 
 	&__btn {
 		@extend .btn;
