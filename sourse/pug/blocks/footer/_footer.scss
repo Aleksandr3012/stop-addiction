@@ -60,11 +60,17 @@
 		}
 
 		&__logo {
-			@include media-breakpoint-only(sm) {
+			@include media-breakpoint-down(md) {
 				justify-content: center;
 				margin-bottom: rem(20);
 			}
 
+		}
+
+		&__col {
+			@include media-breakpoint-down(sm) {
+				text-align: center;
+			}
 		}
 
 	}

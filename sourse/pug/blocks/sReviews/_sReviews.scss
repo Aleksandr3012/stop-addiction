@@ -2,6 +2,7 @@
 .sReviews {
 	padding-top: calc(var(--sPT) * 1.1);
 	padding-bottom: calc(var(--sPB) * 1.2);
+	overflow: hidden;
 	.section-title {
 		padding-bottom: 0;
 	}
