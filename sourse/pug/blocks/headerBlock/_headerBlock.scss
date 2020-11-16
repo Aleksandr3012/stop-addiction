@@ -27,6 +27,9 @@
 		color: $light;
 		padding-left: rem(47);
 		padding-bottom: rem(10);
+		@include media-breakpoint-down(md) {
+			max-width: rem(250);
+		}
 
 		&::before {
 			content: '';
