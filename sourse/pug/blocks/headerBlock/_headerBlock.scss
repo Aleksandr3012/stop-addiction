@@ -69,6 +69,12 @@
 		.headerBlock__smTxt {
 			max-width: rem(630);
 		}
+
+		.picture-bg {
+			@include media-breakpoint-down(sm) {
+				width: 185%;
+			}
+		}
 	}
 
 }
