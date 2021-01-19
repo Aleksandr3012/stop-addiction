@@ -43,9 +43,9 @@
 
 			&:hover {
 				.sub-menu {
-					height: auto;
+					// height: auto;
 					opacity: 1;
-					
+					transform: translateX(-50%);
 				}
 			}
 		}
@@ -61,12 +61,12 @@
 			position: absolute;
 			left: 50%;
 			right: auto;
-			transform: translateX(-50%);
+			transform: scale(0);
 			padding: 20px 10px;
 			background-color: #fff;
 			top: 100%;
 			border-radius: 10px;
-			height: 0;
+			// height: 0;
 			opacity: 0;
 			min-width: 250px;
 			box-shadow: 0 5px 5px 5px #CCCCCC;
@@ -76,6 +76,14 @@
 
 			&::after {
 				display: none !important;
+			}
+		}
+
+		a {
+			color: $body-color;
+
+			&:hover {
+				color: $primary;
 			}
 		}
 	}
