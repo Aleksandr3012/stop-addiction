@@ -1,6 +1,7 @@
 // start .sContent
 .sContent {
 	padding-bottom: calc(var(--sPB) * 1.4);
+	overflow: hidden;
 
 	p {
 		margin-bottom: 1.5rem;
